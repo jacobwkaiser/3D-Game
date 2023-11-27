@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c3lvo4xx1s66g"
+path="res://.godot/imported/Hilly_Prop_Camp_Wood_Pile.obj-27129ce56f709618c277d1718fa744c5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Camp_Wood_Pile.obj-27129ce56f709618c277d1718fa744c5.mesh"]
+
+source_file="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Camp_Wood_Pile.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Camp_Wood_Pile.obj-27129ce56f709618c277d1718fa744c5.mesh", "res://.godot/imported/Hilly_Prop_Camp_Wood_Pile.obj-27129ce56f709618c277d1718fa744c5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

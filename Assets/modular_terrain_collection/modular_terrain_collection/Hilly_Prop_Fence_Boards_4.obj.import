@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://df4mkgrh8hhks"
+path="res://.godot/imported/Hilly_Prop_Fence_Boards_4.obj-8dd7514dd1b6cb3961dc3187c09442c1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Fence_Boards_4.obj-8dd7514dd1b6cb3961dc3187c09442c1.mesh"]
+
+source_file="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Fence_Boards_4.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Fence_Boards_4.obj-8dd7514dd1b6cb3961dc3187c09442c1.mesh", "res://.godot/imported/Hilly_Prop_Fence_Boards_4.obj-8dd7514dd1b6cb3961dc3187c09442c1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

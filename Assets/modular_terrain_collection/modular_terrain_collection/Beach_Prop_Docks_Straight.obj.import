@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://0t3dn44q4q1w"
+path="res://.godot/imported/Beach_Prop_Docks_Straight.obj-195f725c2be06a42a5ea74f3553fb9c0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Beach_Prop_Docks_Straight.obj-195f725c2be06a42a5ea74f3553fb9c0.mesh"]
+
+source_file="res://Assets/modular_terrain_collection/modular_terrain_collection/Beach_Prop_Docks_Straight.obj"
+dest_files=["res://.godot/imported/Beach_Prop_Docks_Straight.obj-195f725c2be06a42a5ea74f3553fb9c0.mesh", "res://.godot/imported/Beach_Prop_Docks_Straight.obj-195f725c2be06a42a5ea74f3553fb9c0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

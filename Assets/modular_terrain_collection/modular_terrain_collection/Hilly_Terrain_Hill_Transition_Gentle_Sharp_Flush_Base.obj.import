@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dlqekfmhatpa4"
+path="res://.godot/imported/Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base.obj-6ac217b9f7a0db2a923b93bad2b09743.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base.obj-6ac217b9f7a0db2a923b93bad2b09743.mesh"]
+
+source_file="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base.obj"
+dest_files=["res://.godot/imported/Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base.obj-6ac217b9f7a0db2a923b93bad2b09743.mesh", "res://.godot/imported/Hilly_Terrain_Hill_Transition_Gentle_Sharp_Flush_Base.obj-6ac217b9f7a0db2a923b93bad2b09743.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

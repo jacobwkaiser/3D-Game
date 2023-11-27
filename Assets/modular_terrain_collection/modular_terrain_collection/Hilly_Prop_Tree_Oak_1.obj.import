@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ccon8u5sej5bo"
+path="res://.godot/imported/Hilly_Prop_Tree_Oak_1.obj-07a9f56946d38ff9c0a7812ab9f93690.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Tree_Oak_1.obj-07a9f56946d38ff9c0a7812ab9f93690.mesh"]
+
+source_file="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Oak_1.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Tree_Oak_1.obj-07a9f56946d38ff9c0a7812ab9f93690.mesh", "res://.godot/imported/Hilly_Prop_Tree_Oak_1.obj-07a9f56946d38ff9c0a7812ab9f93690.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

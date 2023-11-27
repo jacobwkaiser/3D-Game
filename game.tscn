@@ -1,7 +1,46 @@
-[gd_scene format=3 uid="uid://bwdedecame8xn"]
+[gd_scene load_steps=7 format=3 uid="uid://bwdedecame8xn"]
+
+[ext_resource type="ArrayMesh" uid="uid://c3pa7eytgxj37" path="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Terrain_Grass_Floor.obj" id="1_cihxy"]
+[ext_resource type="Script" path="res://Player.gd" id="1_v3m5x"]
+[ext_resource type="PackedScene" uid="uid://bbkowkcrpy8wa" path="res://Assets/kenney_animated-characters-3/Model/characterMedium.fbx" id="2_nv5p3"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_w08b7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_td1uf"]
+size = Vector3(0.8, 0.2, 0.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xtbhn"]
+size = Vector3(3.00891, 0.00612218, 2.91747)
 
 [node name="Game" type="Node3D"]
 
 [node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_v3m5x")
 
-[node name="Camera3D" type="Camera3D" parent="Player"]
+[node name="Body" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(0.65, 0, 0, 0, 0.65, 0, 0, 0, 0.65, 0, -0.422683, 0)
+shape = SubResource("CapsuleShape3D_w08b7")
+
+[node name="Feet" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8, 0)
+shape = SubResource("BoxShape3D_td1uf")
+
+[node name="characterMedium" parent="Player" instance=ExtResource("2_nv5p3")]
+transform = Transform3D(-0.3, 0, -2.62268e-08, 0, 0.3, 0, 2.62268e-08, 0, -0.3, 0, -1, 0)
+
+[node name="Pivot" type="Node3D" parent="Player"]
+
+[node name="Camera3D" type="Camera3D" parent="Player/Pivot"]
+current = true
+fov = 80.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="HillyTerrainPathHillGentlePlainCenter" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.126328, -2.59434, -0.4)
+mesh = ExtResource("1_cihxy")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.131526, -1.88013, -0.405443)
+shape = SubResource("BoxShape3D_xtbhn")
