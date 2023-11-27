@@ -1,8 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://bwdedecame8xn"]
+[gd_scene load_steps=10 format=3 uid="uid://bwdedecame8xn"]
 
 [ext_resource type="ArrayMesh" uid="uid://c3pa7eytgxj37" path="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Terrain_Grass_Floor.obj" id="1_cihxy"]
 [ext_resource type="Script" path="res://Player.gd" id="1_v3m5x"]
 [ext_resource type="PackedScene" uid="uid://bbkowkcrpy8wa" path="res://Assets/kenney_animated-characters-3/Model/characterMedium.fbx" id="2_nv5p3"]
+[ext_resource type="ArrayMesh" uid="uid://djewj18m3ik3l" path="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Rock_2.obj" id="4_2p7lb"]
+[ext_resource type="ArrayMesh" uid="uid://c0yu2nlypdckj" path="res://Assets/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Rock_3.obj" id="5_prxc6"]
+
+[sub_resource type="Environment" id="Environment_5kbik"]
+background_mode = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 6.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_w08b7"]
 
@@ -10,9 +17,15 @@
 size = Vector3(0.8, 0.2, 0.8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xtbhn"]
-size = Vector3(3.00891, 0.00612218, 2.91747)
+size = Vector3(19.6843, 0.00612218, 20.3965)
 
 [node name="Game" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5kbik")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0174524, 0.999848, 0, -0.999848, -0.0174524, 0, 3.96855, 0)
 
 [node name="Player" type="CharacterBody3D" parent="."]
 script = ExtResource("1_v3m5x")
@@ -37,10 +50,17 @@ fov = 80.0
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="HillyTerrainPathHillGentlePlainCenter" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.126328, -2.59434, -0.4)
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0.126328, -5.97819, -0.4)
 mesh = ExtResource("1_cihxy")
-skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.131526, -1.88013, -0.405443)
 shape = SubResource("BoxShape3D_xtbhn")
+
+[node name="HillyPropRock2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.30643, -1.87707, 1.41387)
+mesh = ExtResource("4_2p7lb")
+
+[node name="HillyPropRock3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01921, -1.87707, 6.07931)
+mesh = ExtResource("5_prxc6")
